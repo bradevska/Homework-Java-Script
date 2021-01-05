@@ -1,3 +1,4 @@
+/*
 
 let userInput = prompt("Enter full date mm/dd/yyyy");
 
@@ -5,28 +6,76 @@ let stringFormatedDate = userInput.match(/(\d\d)(\d\d)(\d\d\d\d)/);
 
 let date = new Date(stringFormatedDate[3],stringFormatedDate[1]-1,stringFormatedDate[2]);
 
-let dateDate = date.getDate();
 
-let dateMonth = date.getMonth + 1;
-
-let dateFullYear = date.getFullYear();
+let inputDay = date.getDate();
+let inputMonth = date.getMonth +1;
+let inputYear = date.getFullYear();
 
 let todayDate = new Date();
 
-let todayDateDate = todayDate.getDate();
+let todayDay = todayDate.getDate();
+let todayMonth = todayDate.getMonth()+1 ;
+let todayYear = todayDate.getFullYear();
 
-let todayDateMonth = todayDate.getMonth() + 1;
 
-let todayDateFullYear = todayDate.getFullYear();
-
-if ( ((dateDate <=02 ) && (dateMonth ) && (dateFullYear =2003)) ||
-   ((dateDate >=03) && (dateMonth) && (dateFullYear < 2003)) ){
-   console.log("polnoleten")
-   }
-   else {
-       console.log("maloleten")
-   }
-
-if ((dateDate=todayDate) && (dateMonth=todayDateMonth)&& dateFullYear>=2003 ){
-    console.log("Hapy Birthday")
+if (todayYear-inputYear <=17){
+    console.log("Maloleten")
 }
+else if (todayYear-inputYear ==18 && inputMonth>todayMonth) {
+    console.log("Maloleten")
+}
+else if (todayYear-inputYear ==18 && inputMonth==todayMonth && inputDay>todayDay) {
+    console.log("Maloleten")
+}
+else if (todayYear-inputYear>18){
+    console.log("Polnoleten")
+}
+else if (todayYear-inputYear==18 && inputMonth<todayMonth) {
+    console.log("Polnoleten")
+}
+else if (todayYear-inputYear==18 && inputMonth==todayMonth && inputDay<=todayDay) {
+    console.log("Polnoleten")
+}
+
+*/
+
+
+
+let userInput = prompt("Enter you birthday mm/dd/yyyy");
+
+var stringFormatedDate = userInput.match(/(\d\d)(\d\d)(\d\d\d\d)/);
+
+let date = new Date(stringFormatedDate[3], stringFormatedDate[1] - 1, stringFormatedDate[2]);
+
+let birthdayDay = date.getDate();
+let birthdayMonth = date.getMonth() +1;
+let birthdayYear = date.getFullYear();
+
+let todayDate = new Date();
+
+
+let todayDay = todayDate.getDate();
+let todayMonth = todayDate.getMonth () +1;
+let todayYear = todayDate.getFullYear();
+
+if (todayYear - birthdayYear <=17) {
+    console.log ("Maloleten");
+}
+else if (( todayYear - birthdayYear == 18) && (birthdayMonth > todayMonth )) {
+    console.log ("Maloleten")
+}
+else if ((todayYear - birthdayYear == 18) && (birthdayMonth == todayMonth) &&(birthdayDay > todayDay)) {
+    console.log ("Maloleten ")
+}
+else if (todayYear-birthdayYear > 18 ) {
+    console.log ( "Polnoleten")
+}
+else if ((todayYear - birthdayYear == 18) && (birthdayMonth < todayMonth )) {
+    console.log ("Polnoleten")
+}
+else if ((todayYear - birthdayYear == 18) && (birthdayMonth == todayMonth) && (birthdayDay <= todayDay)){
+    console.log("Polnoleten")
+}
+
+
+
