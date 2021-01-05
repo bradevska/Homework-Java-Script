@@ -11,7 +11,6 @@ let birthdayYear = date.getFullYear();
 
 let todayDate = new Date();
 
-
 let todayDay = todayDate.getDate();
 let todayMonth = todayDate.getMonth () +1;
 let todayYear = todayDate.getFullYear();
