@@ -5,13 +5,13 @@ function dogYears(human){
   let rezult=human*7;
   return rezult;
 }
-dogYears(userInput);
+
 
 function humanYears(dog){
     let rezult=dog/7;
     return rezult;
 }
-humanYears(userInput);
+
 
 if(userChooses==="D") {
     console.log("Human years is" +  " " + humanYears(userInput));

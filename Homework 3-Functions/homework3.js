@@ -1,11 +1,11 @@
 let inputChooses=prompt("Enter $ or EUR");
 let inputMoney=parseInt(prompt("Enter value"));
 
-let kesh=1000;
+
 
 function myMoney (){
-let sum=1000-inputMoney
-return sum;
+let balance=1000-inputMoney
+return balance;
 }
 myMoney(inputMoney);
 
