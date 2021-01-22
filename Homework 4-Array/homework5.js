@@ -8,6 +8,8 @@
 //Bonus: Try making the function work if there are other types of items in it
 
 
+//ISPRAVKA
+
 //Mi sobira i nesto plus,sigurno ja gresam negde
 let numbers=[10,5,150,75,300,25,18];
 function sumOfMaxMin(array) {

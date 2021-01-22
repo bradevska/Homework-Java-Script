@@ -9,6 +9,8 @@
 //Secound 
 
 
+//iSPRAVKA
+
 //function sumOfArrayNumbers(a,b,c,d,e) {
   //let arrayOfnumbers=[];
 

@@ -5,6 +5,7 @@
 //Ex:["Hello", "there", "students", "of", "SEDC", "!"]
 //Result: "Hello there students of SEDC!"
 
+//ISPRAVKA
 
 //Solution 1
 //let arrayText=["Hello","there","students","of","SEDC","!"];
