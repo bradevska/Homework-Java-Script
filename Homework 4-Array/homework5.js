@@ -7,14 +7,22 @@
 
 //Bonus: Try making the function work if there are other types of items in it
 
-let numbers=[10,5,"Biljana",150,75,"Hello Frends",300,25,18];
-console.log(numbers);
-numbers.sort (function(a,b) {
-    return(a-b)
-});
-console.log(numbers);
-console.log("The smallest number is"+ " " +numbers[0] );
-console.log("The bigest number is" + " " +numbers[numbers.length-1]);
-console.log("The sum of smallest and bigest number is", 
-numbers[0]+numbers[numbers.length-1]);
+
+//Mi sobira i nesto plus,sigurno ja gresam negde
+let numbers=[10,5,150,75,300,25,18];
+function sumOfMaxMin(array) {
+    let smallestNumber=numbers[0]
+    let biggestNumber=null;
+    for (let index=0;index<numbers.length;index++){
+        if(numbers[index]>biggestNumber) {
+            biggestNumber=numbers[index];
+        }
+        else if(numbers[index]<smallestNumber){
+            smallestNumber=numbers[index];
+        }
+        let sum=biggestNumber+smallestNumber;
+        console.log(sum)
+    }
+}
+sumOfMaxMin(numbers);
 

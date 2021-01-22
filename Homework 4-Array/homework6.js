@@ -5,26 +5,25 @@
 //Ex: first = ["Bob", "Jill"], last = ["Gregory", "Wurtz"]
 //Result: full = ["1. Bob Gregory", "2. Jill Wurtz"]
 
-let firstName=["Petar","Viktor"];
-let lastName=["Velkov","Pesevski"];
-let numbers=[1,2];
-let fullName=[numbers[0]+ "." + firstName[0] +" "+ lastName[0]+ " " + 
-numbers[1] + "."+ firstName[1]+ " " +lastName[1]];
 
-console.log(fullName);
+//Ovde nesto ja gresam,neznam sto bi mozelo da bide(prazna niza mi pecati)
+let array1=["Petar","Viktor"];
+let array2=["Velkov","Pesevski"];
+let array3=[];
 
-//Probuvav i na vtoriov nacin nekako ali ne mi uspea:
-//let person=[
- // {firstName : "Petar",lastName :"Velkov"},
- // {firstName : "Viktor", lastName : "Pesevski"},
-//]
-//function fullName(item) {
-  //let fullName=[item.firstName,item.lastName].join(" ")
-  //return fullName;
-  //console.log(fullName);
-//}
-//function myFunction() {
- // person.map(fullName);
-//}
+function push(fromArray,toArray){
+  let listNumber=1;
+  for(let i=0,len=fromArray.lenght; i<len; i++) {
+    toArray.push("${listNumber}.${fromArray[i]");
+    listNumber++;
+  }
+  return toArray;
+  
+}
+console.log(array3);
+push(array1,array3);
+push(array2,array3);
+
+  
 
 
