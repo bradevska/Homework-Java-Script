@@ -8,7 +8,8 @@
 //Change the text of the header 1 in the last div
 //Change the text of the header 3 in the last div
 //Note:You can't change the HTML
-//niedno ne mi prifari
+
+//Niedno ne mi prifati!!!
 //1
 let firstDiv = document.querySelector("div");
 console.log(firstDiv);
