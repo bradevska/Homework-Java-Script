@@ -1,6 +1,7 @@
 //Change the text of all paragraphs and headers with javascript
 //Note:The html must not be changed
 
+
 let firstParagraph=document.querySelector("p"[0]);
 console.log(firstParagraph.innerText);// Checking what the text in first paragraph
 firstParagraph.innerText="This is change in first paragraph "
