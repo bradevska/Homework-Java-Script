@@ -7,29 +7,22 @@
 
 
 
-let arr=[2,8,20,50,3];
-let div=document.getElementById("numbers");
-let ul=document.createElement("ul");
+let arr=[2,8,20,50,3,50];
+let ul=document.getElementById("list");
 
-ul.setAttribute("id","theList");
 for(i=0; i<arr.length; i++) {
-  let li=document.createElement("li");
-   li.innerHTML=arr[i];
-     ul.appendChild(li);
+  ul.innerHTML += `<li>  ${arr[i]} </li>`;
 }
-div.appendChild(ul);
- 
 
-let a=arr[0];
-let b=arr[1];
-let c=arr[2];
-let d=arr[3];
-let e=arr[4];
-function sum(a,b,c,d,e){
-    let sum=a+b+c+d+e
-    document.getElementById("myValue").innerHTML = sum;
+function sum(arr) {
+  let result=0;
+  for(let i=0; i<arr.length; i++) {
+    result += arr[i];
+  }
+  console.log(result);
+  document.getElementById("sum").innerText=result;
 }
-sum(2,8,20,50,3);
+sum(arr);
 
 
 
