@@ -18,3 +18,6 @@ function selectType() {
 		selectAccountType();
 	}
 }
+var deposit= parseInt(prompt("How much do you want to deposit?"));
+
+
