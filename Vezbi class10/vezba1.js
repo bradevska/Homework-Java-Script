@@ -9,10 +9,10 @@ var newArray=[];
 function numberDivisable() {
 
     for(var i=1; i <= 100 ; i++) {
-        if ((i % 3=== 0) && (i % 7 === 0))
+        if ((i % 3=== 0 && i % 7 === 0))
         newArray.push(i);
       }
-      return console.log(newArray);
+     
 }
 
 console.log(newArray);
